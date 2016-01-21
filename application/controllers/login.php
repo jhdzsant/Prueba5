@@ -15,7 +15,7 @@ class Login extends CI_Controller
 
     public function index()
     {
-        $this->load->view('login');
+        $this->load->view('Login1');
     }
 
     public function loginUser()
@@ -37,7 +37,7 @@ class Login extends CI_Controller
                         "userID" => $userID
                     );
                     $this->session->set_userdata($datos_sesion);
-                    redirect(base_url('home'));
+                    redirect(base_url('welcome_message'));
                 } else {
                     echo "failed";
 
