@@ -34,7 +34,7 @@
         <p class="login-box-msg">Sign in to start your session</p>
         <form action="<?= base_url('login/loginUser') ?>" method="post">
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" placeholder="Email" name="userID">
+                <input type="email" class="form-control" placeholder="Email" name="userID">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
@@ -42,7 +42,7 @@
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
-                <div class="col-xs-8">
+                <!--<div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
                             <input type="checkbox"> Remember Me

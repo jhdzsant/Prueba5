@@ -25,7 +25,7 @@ class Login extends CI_Controller
             $this->form_validation->set_rules('userID', 'userID', 'trim|required|valid_email|xss_clean');
 
             if ($this->form_validation->run() == false) {
-                echo "Formulario incompleto";
+                echo "Formulario incompleto dentro del if";
             } else {
                 $this->load->model("login_model");
                 $userID = $this->input->post("userID");
@@ -44,7 +44,7 @@ class Login extends CI_Controller
                 }
             }
         } else {
-            echo "Formulario incompleto";
+            echo "Formulario incompleto fuera del if";
         }
 
     }
